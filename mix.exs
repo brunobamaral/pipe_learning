@@ -31,7 +31,9 @@ defmodule PipeLearning.MixProject do
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:sobelow, "~> 0.8", only: :dev}
     ]
   end
 end
