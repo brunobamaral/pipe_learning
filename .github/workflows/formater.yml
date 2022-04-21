@@ -3,7 +3,7 @@ name: Verify Format
 on: pull_request
 
 jobs:
-  check_format:
+  format:
     runs-on: ubuntu-latest
     strategy:
       matrix:
