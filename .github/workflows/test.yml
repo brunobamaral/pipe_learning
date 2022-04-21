@@ -3,7 +3,7 @@ name: Verify Test
 on: pull_request
 
 jobs:
-  check_test:
+  coverage:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -39,4 +39,4 @@ jobs:
           --health-cmd pg_isready
           --health-interval 10s
           --health-timeout 5s
-          --health-retry 5
+          --health-reties 5
